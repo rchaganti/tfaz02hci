@@ -36,7 +36,7 @@ jobs:
 
     # Checks that all Terraform configuration files adhere to a canonical format
     - name: Terraform workspace
-      run: terraform workspace production
+      run: terraform workspace select production
 
     # Generates an execution plan for Terraform
     - name: Terraform Plan
